@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if($dbconnect) {
         // echo "DB connected successfully";
 
-        $sql = "INSERT INTO `login`(`name`, `email`, `mobile`, `nid`, `dob`, `gender`, `address`, `message`)
+        $sql = "INSERT INTO `contact`(`name`, `email`, `mobile`, `nid`, `dob`, `gender`, `address`, `message`)
                             VALUES ('$name', '$email', '$mobile', '$nid', '$dob', '$gender', '$address', '$message')";
         
         $dataInsert = mysqli_query($dbconnect, $sql);
