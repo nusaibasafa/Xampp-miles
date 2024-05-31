@@ -217,19 +217,23 @@ a:hover {
 /*------/ Pagination-a /------*/
 .pagination-a {
   text-decoration: none;
+  background: none;
 }
 
 .pagination-a .pagination .page-link {
   margin: 0 0.2rem;
-  border-color: transparent;
+  border-color: none;
   padding: 0.5rem 0.8rem;
   color: #000000;
+  border-radius: 10%;
+  background-color: #1364929d;
+  backdrop-filter: blur(10px);
 }
 
 .pagination-a .pagination .page-link:hover,
 .pagination-a .pagination .page-link:active,
 .pagination-a .pagination .page-link:focus {
-  background-color: #136492;
+  background-color: #136492a1;
 }
 
 .pagination-a .pagination .page-link span {
@@ -241,22 +245,25 @@ a:hover {
 }
 
 .pagination-a .pagination .page-item:last-child .page-link {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background: none;
 }
 
 .pagination-a .pagination .page-item:first-child .page-link {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background: none;
 }
 
 .pagination-a .pagination .page-item.disabled .page-link {
   padding: 0.4rem 0.9rem;
-  color: #555555;
+  color: #00000000;
 }
 
 .pagination-a .pagination .page-item.active .page-link {
   background-color: #136492;
+  border: none;
 }
 
 .a {
@@ -662,7 +669,7 @@ a:hover {
 .navbar-default.navbar-trans .nav-link,
 .navbar-default.navbar-reduce .nav-link {
   font-size: 1.1rem;
-  color: #000000;
+  color: #3c2e23;
   font-weight: 600;
   letter-spacing: 0.03em;
   transition: all 0.1s ease-in-out;
@@ -746,7 +753,7 @@ a:hover {
 .navbar-default.navbar-reduce .active>.nav-link,
 .navbar-default.navbar-reduce .nav-link.show,
 .navbar-default.navbar-reduce .nav-link.active {
-  color: #3d3430;
+  color: #221813;
 }
 
 .navbar-default.navbar-reduce .navbar-brand {
@@ -1376,7 +1383,10 @@ a:hover {
   width: 100%;
   position: absolute;
   z-index: 2;
-  background-color: #136492;
+  background-color: #cfbfb069;
+  border-radius: 3px;
+  backdrop-filter: blur(10px);
+  /* background-color: #c3b365; */
 }
 
 .card-info {
@@ -1387,7 +1397,7 @@ a:hover {
 
 .card-info .card-info-title {
   font-size: 1rem;
-  color: #313131;
+  color: rgb(18 17 16)#313131;
 }
 
 @media (min-width: 768px) {
