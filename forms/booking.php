@@ -14,6 +14,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // Set the email subject
     $subject = "New Real Estate Booking";
+
+    // if($dbconnect) {
+    //     // echo "DB connected successfully";
+
+    //     $sql = "INSERT INTO `registration` (`firstname`, `lastname`, `username`, `email`, `password`, `confirm-password`) 
+    //             VALUES ('$firstName', '$lastName', '$username', '$email', '$hashedPassword', '$hashedConfirmPassword')";
+        
+    //     $dataInsert = mysqli_query($dbconnect, $sql);
+
+    //     if ($dataInsert) {
+    //         echo "Data inserted to DB Successfully";
+    //     } else {
+    //         die("Data insertion failed: " . mysqli_error($dbconnect));
+    //     }
+
+    // } else {
+    //     die("Database connection failed: " . mysqli_error($dbconnect));
+    // }
     
     // Construct the email message
     $email_message = "Name: $name\n";

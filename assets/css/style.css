@@ -1381,7 +1381,7 @@ a:hover {
   position: absolute;
   z-index: 2;
   background-color: #cfbfb069;
-  border-radius: 3px;
+  border-radius: 2px;
   backdrop-filter: blur(10px);
   /* background-color: #c3b365; */
 }
