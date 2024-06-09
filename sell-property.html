@@ -242,7 +242,7 @@
                     </div>
                   </div>
                 </div> -->
-                <div class="property-summary">
+                <!-- <div class="property-summary">
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="title-box-d section-t4">
@@ -252,10 +252,10 @@
                   </div>
                   <div class="summary-list">
                     <ul class="list">
-                      <!-- <li class="d-flex justify-content-between">
+                      <li class="d-flex justify-content-between">
                         <strong>Property ID:</strong>
                         <span>1134</span>
-                      </li> -->
+                      </li>
                       <li class="d-flex justify-content-between">
                         <strong>Location:</strong>
                         <span>.........</span>
@@ -270,9 +270,9 @@
                       </li>
                       <li class="d-flex justify-content-between">
                         <strong>Area:</strong>
-                        <!-- <span>340m
+                        <span>340m
                           <sup>2</sup>
-                        </span> -->
+                        </span>
                       </li>
                       <li class="d-flex justify-content-between">
                         <strong>Beds:</strong>
@@ -288,7 +288,7 @@
                       </li>
                     </ul>
                   </div>
-                </div>
+                </div> -->
               </div>
               <div class="col-md-7 col-lg-7 section-md-t3">
                 <div class="row">
@@ -299,12 +299,11 @@
                   </div>
                 </div>
                 <div class="property-description">
-                  <p class="description color-text-a">
-                    Text box
-                  </p>
-                  <p class="description color-text-a no-margin">
-                    Text box
-                  </p>
+                  <div class="col-md-8 mb-4">
+                    <div class="form-group">
+                      <textarea class="form-control form-control-lg" name="message" id="message" rows="3" placeholder="Enter your message"></textarea>
+                    </div>
+                  </div>
                 </div>
                 <div class="row section-t3">
                   <div class="col-sm-12">
@@ -369,28 +368,30 @@
 
                     <div class="col-md-8 mb-4">
                       <div class="form-group">
-                        <!-- <label for="name" mb-3>Name:</label> -->
                         <input type="text" class="form-control form-control-lg" name="name" id="name" placeholder="Enter your name" required>
+                      </div>
+                    </div>
+
+                    <div class="col-md-8 mb-4">
+                      <div class="form-group">
+                        <input type="text" class="form-control form-control-lg" name="nid" id="nid" placeholder="Enter your NID" required>
                       </div>
                     </div>
                     
                     <div class="col-md-8 mb-4">
                       <div class="form-group">
-                        <!-- <label for="email" class="mb-1">Email:</label> -->
                         <input type="email" class="form-control form-control-lg" name="email" id="email" placeholder="Enter your email" required>
                       </div>
                     </div>
 
                     <div class="col-md-8 mb-4">
                       <div class="form-group">
-                        <!-- <label for="phone" class="mb-1">Phone Number:</label> -->
                         <input type="tel" class="form-control form-control-lg" name="phone" id="phone" placeholder="Enter your phone number" required>
                       </div>
                     </div>
 
                     <div class="col-md-8 mb-4">
                       <div class="form-group">
-                        <!-- <label for="property">Property of Interest:</label> -->
                         <select class="form-control form-control-lg" id="property" name="property" required>
                           <option value="">Select a property</option>
                           <option value="Apartment">Apartment</option>
@@ -402,13 +403,10 @@
                     </div>
 
                     <div class="col-md-8 mb-4">
-                      <!-- <div class="form-group"> -->
-                        <!-- <label for="formFile" class="mb-1 form-label">Upload Photo:</label> -->
                         <div class="input-group custom-file-button">
                           <label class="input-group-text" for="inputGroupFile">Upload Photo</label>
                           <input type="file" value="Upload Photo" class="form-control form-control-lg" id="inputGroupFile" name="avatar" accept="image/png, image/jpeg" />
                         </div>
-                      <!-- </div> -->
                     </div>
 
                     <div class="col-md-8 mb-4">
@@ -420,7 +418,6 @@
 
                     <div class="col-md-8 mb-4">
                       <div class="form-group">
-                        <!-- <label for="message" class="mb-1">Message:</label> -->
                         <textarea class="form-control form-control-lg" name="message" id="message" rows="3" placeholder="Enter your message"></textarea>
                       </div>
                     </div>
@@ -430,13 +427,24 @@
                         <button type="submit " class="btn btn-lg btn-dark w-100">Submit</button>  
                       </div>
                     </div>
-                    
-    
-                  </div>
-                
+
+                    <div class="col-md-8 mb-2">
+                      <?php
+                        // Check if success message exists in URL
+                        if (isset($_GET["success"]) && $_GET["success"] == 1) {
+                      ?>
+                      <div class="alert alert-success" role="alert">
+                        <!-- <div class="form-group"> -->
+                          <h5>Booking form submitted successfully!</h5>
+                        <!-- </div> -->
+                      </div>
+                      <?php
+                    }
+                      ?>
+                    </div>                    
+                  </div>                
                 </form>
               </div>
-
             </div>
           </div>
         </div>
