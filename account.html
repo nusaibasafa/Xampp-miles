@@ -234,6 +234,21 @@
 				                        	<input type="password" name="password" placeholder="Password..." class="form-password form-control" id="form-password">
 				                        </div>
 				                        <button type="submit" class="btn">Sign in!</button>
+
+										<div class="col-mb-5">
+											<?php
+											  // Check if success message exists in URL
+											  if (isset($_GET["success"]) && $_GET["success"] == 1) {
+											?>
+											<div class="alert alert-success" role="alert">
+											  <!-- <div class="form-group"> -->
+												<h5>Now You Can Login!</h5>
+											  <!-- </div> -->
+											</div>
+											<?php
+										  }
+											?>
+										  </div>
 				                    </form>
 			                    </div>
 		                    </div>
@@ -297,6 +312,21 @@
 				                        	<input type="password" name="confirmPassword" placeholder="Confirm Password..." class="form-password form-control" id="form-password">
 				                        </div>
 				                        <button type="submit" class="btn">Sign me up!</button>
+
+										<!-- <div class="col-sm-5"> -->
+											<?php
+											  // Check if success message exists in URL
+											  if (isset($_GET["success"]) && $_GET["success"] == 1) {
+											?>
+											<div class="alert alert-success" role="alert">
+											  <!-- <div class="form-group"> -->
+												<h5>Signed Up!</h5>
+											  <!-- </div> -->
+											<!-- </div> -->
+											<?php
+										  }
+											?>
+										  </div>
 				                    </form>
 			                    </div>
                         	</div>

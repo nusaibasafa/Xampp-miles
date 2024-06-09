@@ -45,13 +45,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
 
-    // Redirect to login page after successful registration
-    $_SESSION['success'] = "Registration successful! You can now login.";
-    header("Location: http://localhost/xampp-miles/index.html");
+    // Redirect after successful submit
+    header("Location: http://localhost/xampp-miles/index.html?success=1");
     exit();
 } else {
-    // Handle the case if the form is not submitted properly
-    $_SESSION['error'] = "Invalid form submission";
+    // Redirect if form is not submitted properly
     header("Location: http://localhost/xampp-miles/account.html");
     exit();
 }

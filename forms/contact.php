@@ -32,6 +32,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         die("Database connection failed: " . mysqli_error($dbconnect));
     }
 
+    // Redirect after successful submit
+    header("Location: http://localhost/xampp-miles/contact.html?success=1");
+    exit();
+} else {
+    // Redirect if form is not submitted properly
+    header("Location: http://localhost/xampp-miles/contact.html");
+    exit();
 }
 
 

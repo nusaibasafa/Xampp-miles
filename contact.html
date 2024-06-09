@@ -473,6 +473,21 @@
                     <div class="col-md-12 text-center">
                       <button type="submit" class="btn btn-a">Send Message</button>
                     </div>
+
+                    <div class="col-md-12 text-center">
+                      <?php
+                        // Check if success message exists in URL
+                        if (isset($_GET["success"]) && $_GET["success"] == 1) {
+                      ?>
+                      <div class="alert alert-success" role="alert">
+                        <!-- <div class="form-group"> -->
+                          <h5>Massage delivered successfully!</h5>
+                        <!-- </div> -->
+                      </div>
+                      <?php
+                    }
+                      ?>
+                    </div>
                   </div>
                 </form>
               </div>

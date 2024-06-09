@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['username'] = $input_username;
 
         // Redirect to homepage after successful login
-        header("Location: http://localhost/xampp-miles/index.html");
+        header("Location: http://localhost/xampp-miles/sell-property.html");
         exit();
     } else {
         // Authentication failed, set error message
