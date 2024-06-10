@@ -1,155 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
 
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Login and Registration Form</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login and Registration Form</title>
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
-        <link rel="stylesheet" href="assets/account/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/account/font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" href="assets/account/css/form-elements.css">
-        <link rel="stylesheet" href="assets/account/css/style.css">
-		<link href="assets/img/favicon.ico" rel="icon">
-		<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-		<link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-		<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-		<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+	<!-- <link rel="stylesheet" href="assets/account/bootstrap/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="assets/account/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/account/css/form-elements.css">
+	<link rel="stylesheet" href="assets/account/css/style.css">
+	<link href="assets/img/favicon.ico" rel="icon">
+	<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+	<link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-		<!--  Main CSS File -->
-		<link href="assets/css/style.css" rel="stylesheet">
+	<!--  Main CSS File -->
+	<link href="assets/css/style.css" rel="stylesheet">
 
-    </head>
+</head>
 
-    <body>
+<body>
 
-		<!-- ======= Property Search Section ======= -->
-		<div class="click-closed"></div>
+	<!-- ======= Property Search Section ======= -->
+	<div class="click-closed"></div>
 
-		<!--/ Form Search Section /-->
-		<div class="box-collapse">
-		  <div class="title-box-d">
+	<!--/ Form Search Section /-->
+	<div class="box-collapse">
+		<div class="title-box-d">
 			<h3 class="title-d">Search here <span>!</span></h3>
-		  </div>
-		  <span class="close-box-collapse right-boxed bi bi-x"></span>
-		  <div class="box-collapse-wrap form">
-			<form class="form-a">
-			  <div class="row">
-				
-				<div class="col-md-6 mb-2">
-				  <div class="form-group mt-3">
-					<label class="pb-2" for="Type">Type</label>
-					<select class="form-control form-select form-control-a" id="Type">
-					  <option>All Type</option>
-					  <option>Residential</option>
-					  <option>Condominium</option>
-					  <option>Open House</option>
-					</select>
-				  </div>
-				</div>
-				<div class="col-md-6 mb-2">
-				  <div class="form-group mt-3">
-					<label class="pb-2" for="city">City</label>
-					<select class="form-control form-select form-control-a" id="city">
-					  <option>All City</option>
-					  <option>Dhaka</option>
-					  <option>Purbachal</option>
-					  <option>Banani</option>
-					  <option>Gulshan</option>
-					</select>
-				  </div>
-				</div>
-				<div class="col-md-6 mb-2">
-				  <div class="form-group mt-3">
-					<label class="pb-2" for="bedrooms">Bedrooms</label>
-					<input class= "form-control form-control-a" type="number"  id="bedrooms">
-					<!-- <select class="form-control form-select form-control-a" id="bedrooms">
-					  <option>Any</option>
-					  <option>01</option>
-					  <option>02</option>
-					  <option>03</option>
-					</select> -->
-				  </div>
-				</div>
-				<div class="col-md-6 mb-2">
-				  <div class="form-group mt-3">
-					<label class="pb-2" for="garages">Garages</label>
-					<select class="form-control form-select form-control-a" id="garages">
-					  <option>Any</option>
-					  <option>Yes</option>
-					  <option>No</option>
-					</select>
-				  </div>
-				</div>
-				<div class="col-md-6 mb-2">
-				  <div class="form-group mt-3">
-					<label class="pb-2" for="bathrooms">Bathrooms</label>
-					<input class= "form-control form-control-a" type="number"  id="bathrooms">
-					<!-- <select class="form-control form-select form-control-a" id="bathrooms">
-					  <option>Any</option>
-					  <option>01</option>
-					  <option>02</option>
-					  <option>03</option>
-					</select> -->
-				  </div>
-				</div>
-				<div class="col-md-6 mb-2">
-				  <div class="form-group mt-3">
-					<label class="pb-2" for="price">Min Price</label>
-					<select class="form-control form-select form-control-a" id="price">
-					  <option>Amount</option>
-					  <option>Tk 50,000</option>
-					  <option>Tk 100,000</option>
-					  <option>Tk 150,000</option>
-					  <option>Tk 200,000</option>
-					</select>
-				  </div>
-				</div>
-				<div class="col-md-12">
-				  <button type="submit" class="btn btn-b">Search Property</button>
-				</div>
-			  </div>
-			</form>
-		  </div>
 		</div>
-	  
-		<!-- ======= Header/Navbar ======= -->
-		<nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
-		  <div class="container">
-			<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-			  <span></span>
-			  <span></span>
-			  <span></span>
+		<span class="close-box-collapse right-boxed bi bi-x"></span>
+		<div class="box-collapse-wrap form">
+			<form class="form-a">
+				<div class="row">
+
+					<div class="col-md-6 mb-2">
+						<div class="form-group mt-3">
+							<label class="pb-2" for="Type">Type</label>
+							<select class="form-control form-select form-control-a" id="Type">
+								<option>All Type</option>
+								<option>Residential</option>
+								<option>Condominium</option>
+								<option>Open House</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6 mb-2">
+						<div class="form-group mt-3">
+							<label class="pb-2" for="city">City</label>
+							<select class="form-control form-select form-control-a" id="city">
+								<option>All City</option>
+								<option>Dhaka</option>
+								<option>Purbachal</option>
+								<option>Banani</option>
+								<option>Gulshan</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6 mb-2">
+						<div class="form-group mt-3">
+							<label class="pb-2" for="bedrooms">Bedrooms</label>
+							<input class="form-control form-control-a" type="number" id="bedrooms">
+							<!-- <select class="form-control form-select form-control-a" id="bedrooms">
+					  <option>Any</option>
+					  <option>01</option>
+					  <option>02</option>
+					  <option>03</option>
+					</select> -->
+						</div>
+					</div>
+					<div class="col-md-6 mb-2">
+						<div class="form-group mt-3">
+							<label class="pb-2" for="garages">Garages</label>
+							<select class="form-control form-select form-control-a" id="garages">
+								<option>Any</option>
+								<option>Yes</option>
+								<option>No</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6 mb-2">
+						<div class="form-group mt-3">
+							<label class="pb-2" for="bathrooms">Bathrooms</label>
+							<input class="form-control form-control-a" type="number" id="bathrooms">
+							<!-- <select class="form-control form-select form-control-a" id="bathrooms">
+					  <option>Any</option>
+					  <option>01</option>
+					  <option>02</option>
+					  <option>03</option>
+					</select> -->
+						</div>
+					</div>
+					<div class="col-md-6 mb-2">
+						<div class="form-group mt-3">
+							<label class="pb-2" for="price">Min Price</label>
+							<select class="form-control form-select form-control-a" id="price">
+								<option>Amount</option>
+								<option>Tk 50,000</option>
+								<option>Tk 100,000</option>
+								<option>Tk 150,000</option>
+								<option>Tk 200,000</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<button type="submit" class="btn btn-b">Search Property</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<!-- ======= Header/Navbar ======= -->
+	<nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+		<div class="container">
+			<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span></span>
+				<span></span>
+				<span></span>
 			</button>
-	  
+
 			<!-- Logo -->
 			<a class="navbar-brand text-brand" href="index.html">Miles<span class="color-b">Builders</span></a>
-	  
+
 			<!-- Navbar -->
 			<div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
-			  <ul class="navbar-nav">
-	  
-	  
-				
-				<li class="nav-item">
-				  <a class="nav-link " href="index.html">Home</a>
-				</li>
-	  
-				<li class="nav-item">
-				  <a class="nav-link " href="about.html">About</a>
-				</li>
-	  
-				<li class="nav-item">
-				  <a class="nav-link " href="services.html">Services</a>
-				</li>
-	  
-				<!-- <li class="nav-item dropdown">
+				<ul class="navbar-nav">
+
+
+
+					<li class="nav-item">
+						<a class="nav-link " href="index.html">Home</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link " href="about.html">About</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link " href="services.html">Services</a>
+					</li>
+
+					<!-- <li class="nav-item dropdown">
 				  <a class="nav-link " href="property.html">Property</a>
 				</li>
 	  
@@ -160,198 +162,273 @@
 					<a class="dropdown-item " href="buy-property.html">Buy Property</a>
 				  </div>
 				</li> -->
-				
-				<li class="nav-item dropdown">
-				  <a class="nav-link dropdown-toggle" href="property.html" id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false">Property</a>
-				  <div class="dropdown-menu">
-					<a class="dropdown-item " href="sell-property.html">Sell Property</a>
-					<a class="dropdown-item " href="sell-property.html">Rent Property</a>
-					<a class="dropdown-item " href="buy-property.html">Buy Property</a>
-				  </div>
-				</li>
-	  
-				<li class="nav-item">
-				  <a class="nav-link " href="contact.html">Contact</a>
-				</li>
-	  
-				<li class="nav-item">
-				  <a class="nav-link active" href="account.html">Account</a>
-				</li>
-	  
-				
-				<!-- <li class="nav-item">
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="property.html" id="navbarDropdown" role="button"
+							aria-haspopup="true" aria-expanded="false">Property</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item " href="sell-property.html">Sell Property</a>
+							<!-- <a class="dropdown-item " href="sell-property.html">Rent Property</a> -->
+							<a class="dropdown-item " href="buy-property.html">Buy Property</a>
+						</div>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link " href="contact.html">Contact</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link active" href="account.html">Account</a>
+					</li>
+
+
+					<!-- <li class="nav-item">
 				  <button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">
 					Login
 				  </button> 
 				</li> -->
-	  
-			  </ul>
+
+				</ul>
 			</div>
-	  
-			 
-			
+
+
+
 			<!-- <button type="button" class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
 			  <i class="bi bi-search"></i>
 			</button> -->
-	  
-		  </div>
-		  
-		</nav>
 
-        <!-- Top content -->
-        <div class="top-content">
-        	
-            <div class="inner-bg">
-                <div class="container">
-                	
-                    <div class="row">
-                        <div class="col-sm-8 col-sm-offset-2 text">
-                            <h1><strong>Miles Builders</strong> Login &amp; Register Forms</h1>
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col-sm-5">
-                        	
-                        	<div class="form-box">
-	                        	<div class="form-top">
-	                        		<div class="form-top-left">
-	                        			<h3>Login to our site</h3>
-	                            		<p>Enter username and password to log on:</p>
-	                        		</div>
-	                        		<div class="form-top-right">
-	                        			<i class="fa fa-key"></i>
-	                        		</div>
-	                            </div>
-	                            <div class="form-bottom">
-				                    <form role="form" action="./forms/login.php" method="post" class="login-form">
-				                    	<div class="form-group">
-				                    		<label class="sr-only" for="form-username">Username</label>
-				                        	<input type="text" name="username" placeholder="Username..." class="form-username form-control" id="form-username">
-				                        </div>
-				                        <div class="form-group">
-				                        	<label class="sr-only" for="form-password">Password</label>
-				                        	<input type="password" name="password" placeholder="Password..." class="form-password form-control" id="form-password">
-				                        </div>
-				                        <button type="submit" class="btn">Sign in!</button>
+		</div>
 
-										<div class="col-mb-5">
-											<?php
+	</nav>
+
+	<!-- Top content -->
+	<div class="top-content">
+
+		<div class="inner-bg">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-md-12 text-center mt-5 pt-3 pb-4 text-warning">
+						<h2 class="text-white">Miles Builders Login &amp; Register Forms</h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-5">
+
+						<div class="form-box">
+							<div class="form-top">
+								<div class="form-top-left">
+									<h3>Login to our site</h3>
+									<p>Enter username and password to log on:</p>
+								</div>
+								<div class="form-top-right">
+									<i class="fa fa-key"></i>
+								</div>
+							</div>
+							<div class="form-bottom">
+								<form role="form" action="./forms/login.php" method="post" class="login-form"
+									id="loginForm">
+									<div class="form-group">
+										<label class="sr-only" for="form-username">Username</label>
+										<input type="text" name="username" placeholder="Username..."
+											class="form-username form-control" id="form-username">
+									</div>
+									<div class="form-group">
+										<label class="sr-only" for="form-password">Password</label>
+										<input type="password" name="password" placeholder="Password..."
+											class="form-password form-control" id="form-password">
+									</div>
+
+									<button type="submit" class="btn mt-3">Sign in!</button>
+
+									<div class="col-mb-5 mt-2">
+										<?php
 											  // Check if success message exists in URL
 											  if (isset($_GET["success"]) && $_GET["success"] == 1) {
 											?>
-											<div class="alert alert-success" role="alert">
-											  <!-- <div class="form-group"> -->
-												<h5>Now You Can Login!</h5>
-											  <!-- </div> -->
-											</div>
-											<?php
+										<div class="alert alert-success" role="alert" id="loginSuccessMessage"
+											style="display: none">
+											<!-- <div class="form-group"> -->
+											<h6>Successfully, You Are Logged In!</h6>
+											<!-- </div> -->
+										</div>
+										<?php
 										  }
 											?>
-										  </div>
-				                    </form>
-			                    </div>
-		                    </div>
-		                
-		                	<div class="social-login">
-	                        	<h3>...or login with:</h3>
-	                        	<div class="social-login-buttons">
-		                        	<a class="btn btn-link-1 btn-link-1-facebook" href="www.facebook.com">
-		                        		<i class="fa fa-facebook"></i> Facebook
-		                        	</a>
-		                        	<a class="btn btn-link-1 btn-link-1-twitter" href="www.twitter.com">
-		                        		<i class="fa fa-twitter"></i> Twitter
-		                        	</a>
-		                        	<a class="btn btn-link-1 btn-link-1-google-plus" href="www.google.com">
-		                        		<i class="fa fa-google-plus"></i> Google Plus
-		                        	</a>
-	                        	</div>
-	                        </div>
-	                        
-                        </div>
-                        
-                        <div class="col-sm-1 middle-border"></div>
-                        <div class="col-sm-1"></div>
-                        	
-                        <div class="col-sm-5">
-                        	
-                        	<div class="form-box">
-                        		<div class="form-top">
-	                        		<div class="form-top-left">
-	                        			<h3>Sign up now</h3>
-	                            		<p>Fill in the form below to get instant access:</p>
-	                        		</div>
-	                        		<div class="form-top-right">
-	                        			<i class="fa fa-pencil"></i>
-	                        		</div>
-	                            </div>
-	                            <div class="form-bottom">
-				                    <form role="form" action="./forms/registration.php" method="post" class="registration-form">
-				                    	<div class="form-group">
-				                    		<label class="sr-only" for="form-first-name">First Name</label>
-				                        	<input type="text" name="firstName" placeholder="First name..." class="form-first-name form-control" id="form-first-name">
-				                        </div>
-				                        <div class="form-group">
-				                        	<label class="sr-only" for="form-last-name">Last Name</label>
-				                        	<input type="text" name="lastName" placeholder="Last name..." class="form-last-name form-control" id="form-last-name">
-				                        </div>
-										<div class="form-group">
-				                        	<label class="sr-only" for="form-username">Username</label>
-				                        	<input type="text" name="username" placeholder="Username..." class="form-username form-control" id="form-username">
-				                        </div>
-				                        <div class="form-group">
-				                        	<label class="sr-only" for="form-email">Email</label>
-				                        	<input type="text" name="email" placeholder="Email..." class="form-email form-control" id="form-email">
-				                        </div>
-				                        <div class="form-group">
-				                        	<label class="sr-only" for="form-password">Password</label>
-				                        	<input type="password" name="password" placeholder="Password..." class="form-password form-control" id="form-password">
-				                        </div>
-										<div class="form-group">
-				                        	<label class="sr-only" for="confirm-password">Confirm Password</label>
-				                        	<input type="password" name="confirmPassword" placeholder="Confirm Password..." class="form-password form-control" id="form-password">
-				                        </div>
-				                        <button type="submit" class="btn">Sign me up!</button>
+									</div>
+								</form>
+							</div>
+						</div>
 
-										<!-- <div class="col-sm-5"> -->
-											<?php
+						<div class="social-login text-center">
+							<h3>...or login with:</h3>
+							<div class="social-login-buttons btn-group btn-group-lg">
+								<a class="btn btn-lg btn-primary" href="https://www.facebook.com" target="_blank">
+									<i class="fa fa-facebook"></i> Facebook
+								</a>
+								<a class="btn btn-lg btn-info" href="https://www.twitter.com" target="_blank">
+									<i class="fa fa-twitter"></i> Twitter
+								</a>
+								<a class="btn btn-lg btn-danger" href="https://www.google.com" target="_blank">
+									<i class="fa fa-google-plus"></i> Google
+								</a>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="col-sm-1 middle-border"></div>
+					<div class="col-sm-1"></div>
+
+					<div class="col-sm-5">
+
+						<div class="form-box">
+							<div class="form-top">
+								<div class="form-top-left">
+									<h3>Sign up now</h3>
+									<p>Fill in the form below to get instant access:</p>
+								</div>
+								<div class="form-top-right">
+									<i class="fa fa-pencil"></i>
+								</div>
+							</div>
+							<div class="form-bottom">
+								<form role="form" action="./forms/registration.php" method="post"
+									class="registration-form" id="registrationForm">
+									<div class="form-group">
+										<label class="sr-only" for="form-first-name">First Name</label>
+										<input type="text" name="firstName" placeholder="First name..."
+											class="form-first-name form-control" id="form-first-name">
+									</div>
+									<div class="form-group">
+										<label class="sr-only" for="form-last-name">Last Name</label>
+										<input type="text" name="lastName" placeholder="Last name..."
+											class="form-last-name form-control" id="form-last-name">
+									</div>
+									<div class="form-group">
+										<label class="sr-only" for="form-username">Username</label>
+										<input type="text" name="username" placeholder="Username..."
+											class="form-username form-control" id="form-username">
+									</div>
+									<div class="form-group">
+										<label class="sr-only" for="form-email">Email</label>
+										<input type="text" name="email" placeholder="Email..."
+											class="form-email form-control" id="form-email">
+									</div>
+									<div class="form-group">
+										<label class="sr-only" for="form-password">Password</label>
+										<input type="password" name="password" placeholder="Password..."
+											class="form-password form-control" id="form-password">
+									</div>
+									<div class="form-group">
+										<label class="sr-only" for="confirm-password">Confirm Password</label>
+										<input type="password" name="confirmPassword" placeholder="Confirm Password..."
+											class="form-password form-control" id="form-password">
+									</div>
+									<button type="submit" class="btn mt-3">Sign me up!</button>
+
+									<div class="mt-2">
+										<?php
 											  // Check if success message exists in URL
 											  if (isset($_GET["success"]) && $_GET["success"] == 1) {
 											?>
-											<div class="alert alert-success" role="alert">
-											  <!-- <div class="form-group"> -->
-												<h5>Signed Up!</h5>
-											  <!-- </div> -->
+										<div class="alert alert-success" role="alert" id="regSuccessMessage"
+											style="display: none">
+											<!-- <div class="form-group"> -->
+											<h6>You Are Successfully Registered!</h6>
+											<!-- </div> -->
 											<!-- </div> -->
 											<?php
 										  }
 											?>
-										  </div>
-				                    </form>
-			                    </div>
-                        	</div>
-                        	
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            
-        </div>
+										</div>
+								</form>
+							</div>
+						</div>
 
-        <!-- Footer -->
-        
+					</div>
+				</div>
 
-        <!-- Javascript -->
-        <script src="assets/account/js/jquery-1.11.1.min.js"></script>
-        <script src="assets/account/bootstrap/js/bootstrap.min.js"></script>
-        <script src="assets/account/js/jquery.backstretch.min.js"></script>
-        <script src="assets/account/js/scripts.js"></script>
-        
-        <!--[if lt IE 10]>
-            <script src="assets/js/placeholder.js"></script>
-        <![endif]-->
+			</div>
+		</div>
 
-    </body>
+	</div>
+
+	<!-- Footer -->
+
+
+	<!-- Javascript -->
+	<script src="assets/account/js/jquery-1.11.1.min.js"></script>
+	<script src="assets/account/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/account/js/jquery.backstretch.min.js"></script>
+	<script src="assets/account/js/scripts.js"></script>
+
+	<!-- <script>
+		// Get the form and the success message element
+		var form = document.getElementById('registrationForm');
+		var successMessage = document.getElementById('regSuccessMessage');
+
+		// Add an event listener to the form for the submit event
+		form.addEventListener('submit', function (event) {
+			event.preventDefault(); // Prevent the default form submission
+
+			// Send the form data to registration.php using AJAX
+			var formData = new FormData(form);
+			var xhr = new XMLHttpRequest();
+			xhr.open('POST', form.action, true);
+			xhr.onload = function () {
+				if (xhr.status === 200) {
+					// If registration was successful, show the success message
+					successMessage.style.display = 'block';
+
+					// Hide the success message after 4 seconds
+					setTimeout(function () {
+						successMessage.style.display = 'none';
+					}, 4000);
+
+					// Reset the form
+					form.reset();
+				}
+			};
+			xhr.send(formData);
+		});
+	</script> -->
+
+	<script>
+		// Get the form and the success message element
+		var form = document.getElementById('loginForm');
+		var successMessage = document.getElementById('loginSuccessMessage');
+
+		var form = document.getElementById('registrationForm');
+		var successMessage = document.getElementById('regSuccessMessage');
+
+		// Add an event listener to the form for the submit event
+		form.addEventListener('submit', function (event) {
+			event.preventDefault(); // Prevent the default form submission
+
+			// Send the form data to login.php using AJAX
+			var formData = new FormData(form);
+			var xhr = new XMLHttpRequest();
+			xhr.open('POST', form.action, true);
+			xhr.onload = function () {
+				if (xhr.status === 200) {
+					// If login was successful, show the success message
+					successMessage.style.display = 'block';
+
+					// Hide the success message after 4 seconds
+					setTimeout(function () {
+						successMessage.style.display = 'none';
+					}, 4000);
+
+					// Reset the form
+					form.reset();
+				}
+			};
+			xhr.send(formData);
+		});
+	</script>
+
+</body>
 
 </html>

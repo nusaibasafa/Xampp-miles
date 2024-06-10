@@ -226,7 +226,7 @@ a:hover {
   padding: 0.5rem 0.8rem;
   color: #000000;
   border-radius: 10%;
-  background-color: #1364929d;
+  background-color: "floralwhite";
   backdrop-filter: blur(10px);
 }
 
@@ -2214,4 +2214,13 @@ footer .credits {
 .custom-file-button:hover label {
   background-color: #dde0e3;
   cursor: pointer;
+}
+
+/*********************************
+* Social Media Icon
+*********************************/
+
+.btn .btn-link-1 {
+  color: white;
+  padding-top: 15px;
 }
